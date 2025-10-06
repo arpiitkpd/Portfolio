@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arpit Dev • Portfolio</title>
+
+  <link rel="icon" href="generated-image.png" type="image/png" />
+  <link rel="apple-touch-icon" href="generated-image.png" />
+
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+  <!-- Starfield layers -->
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+
+  <header class="nav">
+    <div class="brand">ARPIT • DEV</div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero sticky-wrap">
+    <div class="hero-card sticky reveal left">
+      <h1>Arpit Kumar</h1>
+      <div class="role">Software Developer</div>
+      <p class="section-sub">Designing and delivering reliable web applications with clean architectures, responsive
+        interfaces, and accessible, high‑performance experiences—powered by modern JavaScript, robust APIs, and
+        pragmatic system design.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn secondary" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="orbit-visual reveal right" aria-hidden="true">
+      <div class="ring"></div>
+      <div class="planet p1"></div>
+      <div class="planet p2"></div>
+      <div class="planet p3"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title reveal left">About</h2>
+    <p class="section-sub reveal left">Professional software developer specializing in Salesforce Development, SpingBoot
+      and ReactJs.</p>
+    <div class="about-grid">
+      <div class="card reveal up">
+        <h3>Philosophy</h3>
+        <p>Engineering robust backends with clean contracts, resilient services, and observable systems—prioritizing
+          reliability, security, and performance while automating for scale.</p>
+      </div>
+      <div class="card reveal up">
+        <h3>Toolbox</h3>
+        <p>JavaScript, React, SpringBoot, LWC , Apex , Automation, Java.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills: categorized, filterable grid -->
+  <section id="skills">
+    <h2 class="section-title reveal left">Skills</h2>
+    <p class="section-sub reveal left">A clear constellation of capabilities grouped for quick review and easy scaling.
+    </p>
+
+    <!-- Filters -->
+    <div class="skills-filters reveal left" role="tablist" aria-label="Skill categories">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+      <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Backend</button>
+      <button class="filter-btn" data-filter="salesforce" role="tab" aria-selected="false">Salesforce</button>
+      <button class="filter-btn" data-filter="other" role="tab" aria-selected="false">CS/Other</button>
+    </div>
+
+    <!-- Skill grid -->
+    <div class="skills-grid">
+      <!-- Salesforce -->
+      <article class="skill-card reveal right" data-group="salesforce">
+        <header class="skill-head">
+          <span class="chip chip-sf">Salesforce</span>
+          <h3>Apex & LWC</h3>
+          <span class="level">Advanced</span>
+        </header>
+        <p class="skill-note">Custom logic, component‑driven UIs, and Flow‑first automation with scalable, bulkified
+          patterns.</p>
+        <div class="tags">
+          <span class="tag">Apex</span>
+          <span class="tag">LWC</span>
+          <span class="tag">SOQL/SOSL</span>
+          <span class="tag">Flows</span>
+          <span class="tag">Salesforce DX</span>
+        </div>
+      </article>
+
+      <article class="skill-card reveal right" data-group="salesforce">
+        <header class="skill-head">
+          <span class="chip chip-sf">Salesforce</span>
+          <h3>Platform Integration</h3>
+          <span class="level">Intermediate</span>
+        </header>
+        <p class="skill-note">API integrations, governor‑limit awareness, and secure data access with sharing & async
+          Apex.</p>
+        <div class="tags">
+          <span class="tag">REST/SOAP</span>
+          <span class="tag">Platform Events</span>
+          <span class="tag">Async Apex</span>
+          <span class="tag">Security</span>
+          <span class="tag">Best Practices</span>
+        </div>
+      </article>
+
+      <!-- Full‑Stack -->
+      <article class="skill-card reveal right" data-group="frontend">
+        <header class="skill-head">
+          <span class="chip chip-front">Frontend</span>
+          <h3>React</h3>
+          <span class="level">Advanced</span>
+        </header>
+        <p class="skill-note">SPA architecture, state management, and accessible UI engineering with performance
+          budgets.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Vite</span>
+          <span class="tag">A11y</span>
+          <span class="tag">Animations</span>
+        </div>
+      </article>
+
+      <article class="skill-card reveal right" data-group="backend">
+        <header class="skill-head">
+          <span class="chip chip-back">Backend</span>
+          <h3>Spring Boot</h3>
+          <span class="level">Intermediate</span>
+        </header>
+        <p class="skill-note">RESTful services, validation, auth, and production observability for reliable backends.
+        </p>
+        <div class="tags">
+          <span class="tag">Spring Boot</span>
+          <span class="tag">JPA</span>
+          <span class="tag">REST</span>
+          <span class="tag">JWT</span>
+          <span class="tag">Testing</span>
+        </div>
+      </article>
+
+      <article class="skill-card reveal right" data-group="backend">
+        <header class="skill-head">
+          <span class="chip chip-back">Backend</span>
+          <h3>Node.js</h3>
+          <span class="level">Intermediate</span>
+        </header>
+        <p class="skill-note">API gateways, caching, and streaming patterns for scalable services.</p>
+        <div class="tags">
+          <span class="tag">Express</span>
+          <span class="tag">Auth</span>
+          <span class="tag">Redis</span>
+          <span class="tag">Queues</span>
+        </div>
+      </article>
+
+      <!-- CS / Core -->
+      <article class="skill-card reveal right" data-group="other">
+        <header class="skill-head">
+          <span class="chip chip-other">CS/Other</span>
+          <h3>DSA</h3>
+          <span class="level">Proficient</span>
+        </header>
+        <p class="skill-note">Applied data structures and algorithms for practical problem solving.</p>
+        <div class="tags">
+          <span class="tag">Arrays</span>
+          <span class="tag">Graphs</span>
+          <span class="tag">Greedy</span>
+          <span class="tag">DP</span>
+        </div>
+      </article>
+
+      <article class="skill-card reveal right" data-group="other">
+        <header class="skill-head">
+          <span class="chip chip-other">CS/Other</span>
+          <h3>System Design</h3>
+          <span class="level">Intermediate</span>
+        </header>
+        <p class="skill-note">Service boundaries, consistency models, caching, and reliability trade‑offs.</p>
+        <div class="tags">
+          <span class="tag">APIs</span>
+          <span class="tag">Scalability</span>
+          <span class="tag">Observability</span>
+          <span class="tag">Resilience</span>
+        </div>
+      </article>
+
+      <article class="skill-card reveal right" data-group="other">
+        <header class="skill-head">
+          <span class="chip chip-other">CS/Other</span>
+          <h3>DBMS</h3>
+          <span class="level">Intermediate</span>
+        </header>
+        <p class="skill-note">Relational modeling, indexing, and query optimization across SQL and NoSQL stores.</p>
+        <div class="tags">
+          <span class="tag">SQL</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Indexes</span>
+          <span class="tag">Transactions</span>
+        </div>
+      </article>
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title reveal left">Projects</h2>
+    <p class="section-sub reveal left">Mission logs from React frontiers, BaaS waystations, and a MongoDB starbase—built
+      for speed, stability, and cosmic scale.</p>
+    <div class="projects-grid">
+      <article class="project reveal right">
+        <div class="thumb">ROOFIE</div>
+        <div class="body">
+          <a class="anchor" href="https://github.com/arpiitkpd/Roomie" target="_blank">
+            <h4>Roomate Finder →</h4>
+          </a>
+          <p>React‑first roommate finder that matches people and places in real time—powered by Appwrite authentication,
+            databases, and storage for secure profiles, listings.</p>
+
+        </div>
+      </article>
+      <article class="project reveal right">
+        <div class="thumb">Event-Book</div>
+        <div class="body">
+          <a class="anchor" href="https://github.com/arpiitkpd/EventBooking" target="_blank">
+          <h4>Event booking backend →</h4>
+          </a>
+          <p>Backend for an event‑booking platform built with Spring Boot and MongoDB—secure REST APIs for listings,
+            tickets, and payments, with validation, auditing, and scalable data models.</p>
+        </div>
+      </article>
+      <article class="project reveal right">
+        <div class="thumb">My-Tube</div>
+        <div class="body">
+          <a class="anchor" href="https://github.com/arpiitkpd/backend_vidmix" target="_blank">
+          <h4>Youtube look-a-like backend →</h4>
+          </a>
+          <p>Backend for a YouTube‑style platform with Node.js and MongoDB—JWT auth, video upload and streaming,
+            comments, likes, and RESTful APIs for reliable content delivery.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2 class="section-title reveal left">Experience</h2>
+    <p class="section-sub reveal left">Journey across teams and missions delivering performant, animated frontends.</p>
+    <div class="timeline">
+      <div class="xp reveal up">
+        <strong>Salesforce Developer • Algocirrus Pvt. Lmt.</strong>
+        <div>Working on async automation and Lightning Web Components to enhance UI responsiveness, streamline Apex
+          interactions, and deliver smoother, scalable Salesforce experiences.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title reveal left">Contact</h2>
+    <p class="section-sub reveal left">Open to collaborations, roles, and creative experiments among the stars.</p>
+    <div class="contact-grid">
+      <form class="card reveal right" onsubmit="event.preventDefault(); alert('Message sent!');">
+        <label>Name</label>
+        <input type="text" placeholder="Your name" required />
+        <br /><br />
+        <label>Email</label>
+        <input type="email" placeholder="name@example.com" required />
+        <br /><br />
+        <label>Message</label>
+        <textarea placeholder="How can we build something stellar?"></textarea>
+        <br /><br />
+        <button class="btn">Send Message</button>
+      </form>
+      <div class="card reveal up">
+        <h3>Signal</h3>
+        <p>Based in Noida • Working remotely across time zones.</p>
+        <p>arpiitkumar02@gmailcom</p>
+        <p>Available for full‑time and select freelance projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="portfolio.js"></script>
+</body>
+
+</html>
